@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		516D08D11E79493D003A5E83 /* Quake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516D08D01E79493D003A5E83 /* Quake.swift */; };
+		516D08D31E7955A8003A5E83 /* EarthquakeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516D08D21E7955A8003A5E83 /* EarthquakeService.swift */; };
+		516D08D61E7956B9003A5E83 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516D08D51E7956B9003A5E83 /* Enums.swift */; };
+		516D08D81E796FF8003A5E83 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516D08D71E796FF8003A5E83 /* DoubleExtension.swift */; };
+		516D08EB1E7AB5EF003A5E83 /* APIRequestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516D08EA1E7AB5EF003A5E83 /* APIRequestsTests.swift */; };
+		516D08ED1E7AB640003A5E83 /* Twitter_Quake_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516D08EC1E7AB640003A5E83 /* Twitter_Quake_Tests.swift */; };
+		516D08EF1E7B299E003A5E83 /* QuakesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516D08EE1E7B299D003A5E83 /* QuakesListViewController.swift */; };
+		516D08F11E7B2A82003A5E83 /* QuakeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516D08F01E7B2A82003A5E83 /* QuakeDetailsViewController.swift */; };
+		516D08F51E7B3DF7003A5E83 /* MKMapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516D08F41E7B3DF7003A5E83 /* MKMapViewExtension.swift */; };
+		51B8B9E11E6C9BE1007603C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B8B9E01E6C9BE1007603C1 /* AppDelegate.swift */; };
+		51B8B9E61E6C9BE1007603C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B8B9E41E6C9BE1007603C1 /* Main.storyboard */; };
+		51B8B9E81E6C9BE1007603C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51B8B9E71E6C9BE1007603C1 /* Assets.xcassets */; };
+		51B8B9EB1E6C9BE1007603C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B8B9E91E6C9BE1007603C1 /* LaunchScreen.storyboard */; };
+		51B8B9F61E6CA919007603C1 /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B8B9F51E6CA919007603C1 /* TwitterViewController.swift */; };
+		51B8B9F91E6DF9F0007603C1 /* EarthquakeEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B8B9F81E6DF9F0007603C1 /* EarthquakeEndpoint.swift */; };
+		51F7759B1E78090D005FD56B /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F7759A1E78090D005FD56B /* DateExtension.swift */; };
+		72E1ECE0A38D26CA42425BFB /* Pods_Twitter_Quake_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16253630440C29927245D78 /* Pods_Twitter_Quake_Tests.framework */; };
+		872D6776C6C0E82E0152DB7B /* Pods_Twitter_Quake.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A4C324AE7ABD6ADFF214788 /* Pods_Twitter_Quake.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		516D08E51E7AB580003A5E83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51B8B9D51E6C9BE1007603C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51B8B9DC1E6C9BE1007603C1;
+			remoteInfo = "Twitter Quake";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		311FBA133992323C01D525B4 /* Pods-Twitter Quake Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twitter Quake Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Twitter Quake Tests/Pods-Twitter Quake Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		516D08D01E79493D003A5E83 /* Quake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Quake.swift; path = Models/Quake.swift; sourceTree = "<group>"; };
+		516D08D21E7955A8003A5E83 /* EarthquakeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EarthquakeService.swift; path = Networking/EarthquakeService.swift; sourceTree = "<group>"; };
+		516D08D51E7956B9003A5E83 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Enums.swift; path = Enums/Enums.swift; sourceTree = "<group>"; };
+		516D08D71E796FF8003A5E83 /* DoubleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoubleExtension.swift; path = Helpers/Extensions/DoubleExtension.swift; sourceTree = "<group>"; };
+		516D08E01E7AB580003A5E83 /* Twitter Quake Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Twitter Quake Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		516D08E41E7AB580003A5E83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		516D08EA1E7AB5EF003A5E83 /* APIRequestsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestsTests.swift; sourceTree = "<group>"; };
+		516D08EC1E7AB640003A5E83 /* Twitter_Quake_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Twitter_Quake_Tests.swift; sourceTree = "<group>"; };
+		516D08EE1E7B299D003A5E83 /* QuakesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuakesListViewController.swift; path = "View Contollers/QuakesListViewController.swift"; sourceTree = "<group>"; };
+		516D08F01E7B2A82003A5E83 /* QuakeDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuakeDetailsViewController.swift; path = "View Contollers/QuakeDetailsViewController.swift"; sourceTree = "<group>"; };
+		516D08F41E7B3DF7003A5E83 /* MKMapViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKMapViewExtension.swift; path = Helpers/Extensions/MKMapViewExtension.swift; sourceTree = "<group>"; };
+		51B8B9DD1E6C9BE1007603C1 /* Twitter Quake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Twitter Quake.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		51B8B9E01E6C9BE1007603C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		51B8B9E51E6C9BE1007603C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		51B8B9E71E6C9BE1007603C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		51B8B9EA1E6C9BE1007603C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		51B8B9EC1E6C9BE1007603C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51B8B9F51E6CA919007603C1 /* TwitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwitterViewController.swift; path = "View Contollers/TwitterViewController.swift"; sourceTree = "<group>"; };
+		51B8B9F81E6DF9F0007603C1 /* EarthquakeEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EarthquakeEndpoint.swift; path = Networking/EarthquakeEndpoint.swift; sourceTree = "<group>"; };
+		51F7759A1E78090D005FD56B /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateExtension.swift; path = Helpers/Extensions/DateExtension.swift; sourceTree = "<group>"; };
+		5A4C324AE7ABD6ADFF214788 /* Pods_Twitter_Quake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twitter_Quake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85985E410DC34A308D4554F4 /* Pods-Twitter Quake Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twitter Quake Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Twitter Quake Tests/Pods-Twitter Quake Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B580A8299ACE93BC0B4F65DC /* Pods-Twitter Quake.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twitter Quake.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Twitter Quake/Pods-Twitter Quake.debug.xcconfig"; sourceTree = "<group>"; };
+		C038B066524140B964663DD0 /* Pods-Twitter Quake.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twitter Quake.release.xcconfig"; path = "Pods/Target Support Files/Pods-Twitter Quake/Pods-Twitter Quake.release.xcconfig"; sourceTree = "<group>"; };
+		E16253630440C29927245D78 /* Pods_Twitter_Quake_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twitter_Quake_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		516D08DD1E7AB580003A5E83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72E1ECE0A38D26CA42425BFB /* Pods_Twitter_Quake_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51B8B9DA1E6C9BE1007603C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				872D6776C6C0E82E0152DB7B /* Pods_Twitter_Quake.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		431E163C14BB9806EDBB964D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A4C324AE7ABD6ADFF214788 /* Pods_Twitter_Quake.framework */,
+				E16253630440C29927245D78 /* Pods_Twitter_Quake_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		516D08CE1E7811CE003A5E83 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				516D08D01E79493D003A5E83 /* Quake.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		516D08CF1E7811E0003A5E83 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				516D08F01E7B2A82003A5E83 /* QuakeDetailsViewController.swift */,
+				516D08EE1E7B299D003A5E83 /* QuakesListViewController.swift */,
+				51B8B9F51E6CA919007603C1 /* TwitterViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		516D08D41E79569C003A5E83 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				516D08D51E7956B9003A5E83 /* Enums.swift */,
+			);
+			name = Enums;
+			sourceTree = "<group>";
+		};
+		516D08E11E7AB580003A5E83 /* Twitter Quake Tests */ = {
+			isa = PBXGroup;
+			children = (
+				516D08EC1E7AB640003A5E83 /* Twitter_Quake_Tests.swift */,
+				516D08E41E7AB580003A5E83 /* Info.plist */,
+				516D08EA1E7AB5EF003A5E83 /* APIRequestsTests.swift */,
+			);
+			path = "Twitter Quake Tests";
+			sourceTree = "<group>";
+		};
+		51B8B9D41E6C9BE1007603C1 = {
+			isa = PBXGroup;
+			children = (
+				51B8B9DF1E6C9BE1007603C1 /* Twitter Quake */,
+				516D08E11E7AB580003A5E83 /* Twitter Quake Tests */,
+				51B8B9DE1E6C9BE1007603C1 /* Products */,
+				C5C88E45384B4E3B45D62547 /* Pods */,
+				431E163C14BB9806EDBB964D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		51B8B9DE1E6C9BE1007603C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				51B8B9DD1E6C9BE1007603C1 /* Twitter Quake.app */,
+				516D08E01E7AB580003A5E83 /* Twitter Quake Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		51B8B9DF1E6C9BE1007603C1 /* Twitter Quake */ = {
+			isa = PBXGroup;
+			children = (
+				516D08D41E79569C003A5E83 /* Enums */,
+				51F775961E780886005FD56B /* Helpers */,
+				516D08CE1E7811CE003A5E83 /* Models */,
+				51B8B9F71E6DE8CA007603C1 /* Networking */,
+				51B8B9F21E6C9BE9007603C1 /* Support Files */,
+				516D08CF1E7811E0003A5E83 /* View Controllers */,
+				51B8B9E41E6C9BE1007603C1 /* Main.storyboard */,
+			);
+			path = "Twitter Quake";
+			sourceTree = "<group>";
+		};
+		51B8B9F21E6C9BE9007603C1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				51B8B9E01E6C9BE1007603C1 /* AppDelegate.swift */,
+				51B8B9E71E6C9BE1007603C1 /* Assets.xcassets */,
+				51B8B9E91E6C9BE1007603C1 /* LaunchScreen.storyboard */,
+				51B8B9EC1E6C9BE1007603C1 /* Info.plist */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		51B8B9F71E6DE8CA007603C1 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				51B8B9F81E6DF9F0007603C1 /* EarthquakeEndpoint.swift */,
+				516D08D21E7955A8003A5E83 /* EarthquakeService.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		51F775961E780886005FD56B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				51F775971E780894005FD56B /* Extensions */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		51F775971E780894005FD56B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				51F7759A1E78090D005FD56B /* DateExtension.swift */,
+				516D08D71E796FF8003A5E83 /* DoubleExtension.swift */,
+				516D08F41E7B3DF7003A5E83 /* MKMapViewExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		C5C88E45384B4E3B45D62547 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B580A8299ACE93BC0B4F65DC /* Pods-Twitter Quake.debug.xcconfig */,
+				C038B066524140B964663DD0 /* Pods-Twitter Quake.release.xcconfig */,
+				311FBA133992323C01D525B4 /* Pods-Twitter Quake Tests.debug.xcconfig */,
+				85985E410DC34A308D4554F4 /* Pods-Twitter Quake Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		516D08DF1E7AB580003A5E83 /* Twitter Quake Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 516D08E71E7AB580003A5E83 /* Build configuration list for PBXNativeTarget "Twitter Quake Tests" */;
+			buildPhases = (
+				9EBDB38FCE979E385F5FD735 /* [CP] Check Pods Manifest.lock */,
+				516D08DC1E7AB580003A5E83 /* Sources */,
+				516D08DD1E7AB580003A5E83 /* Frameworks */,
+				516D08DE1E7AB580003A5E83 /* Resources */,
+				B8C2EFCB1F39B1AC41F848EE /* [CP] Embed Pods Frameworks */,
+				AC257187F7EA9BDE6A832192 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				516D08E61E7AB580003A5E83 /* PBXTargetDependency */,
+			);
+			name = "Twitter Quake Tests";
+			productName = "Twitter Quake Tests";
+			productReference = 516D08E01E7AB580003A5E83 /* Twitter Quake Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		51B8B9DC1E6C9BE1007603C1 /* Twitter Quake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51B8B9EF1E6C9BE1007603C1 /* Build configuration list for PBXNativeTarget "Twitter Quake" */;
+			buildPhases = (
+				CEB1A96B06071DFA2056BCE0 /* [CP] Check Pods Manifest.lock */,
+				51B8B9D91E6C9BE1007603C1 /* Sources */,
+				51B8B9DA1E6C9BE1007603C1 /* Frameworks */,
+				51B8B9DB1E6C9BE1007603C1 /* Resources */,
+				5A2A58A29AF4D6B19CD861F5 /* [CP] Embed Pods Frameworks */,
+				E08292F6477C6463D6B26280 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Twitter Quake";
+			productName = "Twitter Quake";
+			productReference = 51B8B9DD1E6C9BE1007603C1 /* Twitter Quake.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		51B8B9D51E6C9BE1007603C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Krzysztof Hołtyn";
+				TargetAttributes = {
+					516D08DF1E7AB580003A5E83 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = LLD6V5Z3T2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 51B8B9DC1E6C9BE1007603C1;
+					};
+					51B8B9DC1E6C9BE1007603C1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = LLD6V5Z3T2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 51B8B9D81E6C9BE1007603C1 /* Build configuration list for PBXProject "Twitter Quake" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 51B8B9D41E6C9BE1007603C1;
+			productRefGroup = 51B8B9DE1E6C9BE1007603C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				51B8B9DC1E6C9BE1007603C1 /* Twitter Quake */,
+				516D08DF1E7AB580003A5E83 /* Twitter Quake Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		516D08DE1E7AB580003A5E83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51B8B9DB1E6C9BE1007603C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51B8B9EB1E6C9BE1007603C1 /* LaunchScreen.storyboard in Resources */,
+				51B8B9E81E6C9BE1007603C1 /* Assets.xcassets in Resources */,
+				51B8B9E61E6C9BE1007603C1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A2A58A29AF4D6B19CD861F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Twitter Quake/Pods-Twitter Quake-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EBDB38FCE979E385F5FD735 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AC257187F7EA9BDE6A832192 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Twitter Quake Tests/Pods-Twitter Quake Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8C2EFCB1F39B1AC41F848EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Twitter Quake Tests/Pods-Twitter Quake Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEB1A96B06071DFA2056BCE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E08292F6477C6463D6B26280 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Twitter Quake/Pods-Twitter Quake-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		516D08DC1E7AB580003A5E83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				516D08EB1E7AB5EF003A5E83 /* APIRequestsTests.swift in Sources */,
+				516D08ED1E7AB640003A5E83 /* Twitter_Quake_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51B8B9D91E6C9BE1007603C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				516D08F11E7B2A82003A5E83 /* QuakeDetailsViewController.swift in Sources */,
+				516D08EF1E7B299E003A5E83 /* QuakesListViewController.swift in Sources */,
+				51B8B9F61E6CA919007603C1 /* TwitterViewController.swift in Sources */,
+				516D08D11E79493D003A5E83 /* Quake.swift in Sources */,
+				51F7759B1E78090D005FD56B /* DateExtension.swift in Sources */,
+				516D08F51E7B3DF7003A5E83 /* MKMapViewExtension.swift in Sources */,
+				516D08D81E796FF8003A5E83 /* DoubleExtension.swift in Sources */,
+				516D08D31E7955A8003A5E83 /* EarthquakeService.swift in Sources */,
+				51B8B9E11E6C9BE1007603C1 /* AppDelegate.swift in Sources */,
+				516D08D61E7956B9003A5E83 /* Enums.swift in Sources */,
+				51B8B9F91E6DF9F0007603C1 /* EarthquakeEndpoint.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		516D08E61E7AB580003A5E83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51B8B9DC1E6C9BE1007603C1 /* Twitter Quake */;
+			targetProxy = 516D08E51E7AB580003A5E83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		51B8B9E41E6C9BE1007603C1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51B8B9E51E6C9BE1007603C1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		51B8B9E91E6C9BE1007603C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51B8B9EA1E6C9BE1007603C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		516D08E81E7AB580003A5E83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 311FBA133992323C01D525B4 /* Pods-Twitter Quake Tests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = LLD6V5Z3T2;
+				INFOPLIST_FILE = "Twitter Quake Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "krzysztofholtyn.Twitter-Quake-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Twitter Quake.app/Twitter Quake";
+			};
+			name = Debug;
+		};
+		516D08E91E7AB580003A5E83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85985E410DC34A308D4554F4 /* Pods-Twitter Quake Tests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = LLD6V5Z3T2;
+				INFOPLIST_FILE = "Twitter Quake Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "krzysztofholtyn.Twitter-Quake-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Twitter Quake.app/Twitter Quake";
+			};
+			name = Release;
+		};
+		51B8B9ED1E6C9BE1007603C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		51B8B9EE1E6C9BE1007603C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		51B8B9F01E6C9BE1007603C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B580A8299ACE93BC0B4F65DC /* Pods-Twitter Quake.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LLD6V5Z3T2;
+				INFOPLIST_FILE = "Twitter Quake/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "krzysztofholtyn.Twitter-Quake";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		51B8B9F11E6C9BE1007603C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C038B066524140B964663DD0 /* Pods-Twitter Quake.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LLD6V5Z3T2;
+				INFOPLIST_FILE = "Twitter Quake/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "krzysztofholtyn.Twitter-Quake";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		516D08E71E7AB580003A5E83 /* Build configuration list for PBXNativeTarget "Twitter Quake Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				516D08E81E7AB580003A5E83 /* Debug */,
+				516D08E91E7AB580003A5E83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51B8B9D81E6C9BE1007603C1 /* Build configuration list for PBXProject "Twitter Quake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51B8B9ED1E6C9BE1007603C1 /* Debug */,
+				51B8B9EE1E6C9BE1007603C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51B8B9EF1E6C9BE1007603C1 /* Build configuration list for PBXNativeTarget "Twitter Quake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51B8B9F01E6C9BE1007603C1 /* Debug */,
+				51B8B9F11E6C9BE1007603C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 51B8B9D51E6C9BE1007603C1 /* Project object */;
+}

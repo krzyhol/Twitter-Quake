@@ -1,0 +1,6 @@
+framework module Pods_Twitter_Quake {
+  umbrella header "Pods-Twitter Quake-umbrella.h"
+
+  export *
+  module * { export * }
+}

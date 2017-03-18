@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Kcr-1X-wbf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Quakes List View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="QuakesListViewController" customModule="Twitter_Quake" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fZ9-G2-Uzx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fZ9-G2-Uzx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QsN-ji-JxI"/>
+                            <constraint firstItem="fZ9-G2-Uzx" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="cRJ-8x-R7y"/>
+                            <constraint firstAttribute="trailing" secondItem="fZ9-G2-Uzx" secondAttribute="trailing" id="fYh-UK-trj"/>
+                            <constraint firstItem="fZ9-G2-Uzx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pls-U9-Nyv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ply-Ta-PnC"/>
+                    <connections>
+                        <outlet property="tableView" destination="fZ9-G2-Uzx" id="RC8-5Z-JsH"/>
+                        <segue destination="nPh-pc-Tum" kind="show" identifier="QuakeDetails" id="9go-vb-3kZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="760.5" y="36.5"/>
+        </scene>
+        <!--Quake Details View Controller-->
+        <scene sceneID="743-1O-6hY">
+            <objects>
+                <viewController id="nPh-pc-Tum" customClass="QuakeDetailsViewController" customModule="Twitter_Quake" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ky3-5t-ZWi"/>
+                        <viewControllerLayoutGuide type="bottom" id="cJG-Dz-i5d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SPv-kE-Ng2">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0Th-Fn-JHl">
+                                <rect key="frame" x="16" y="72" width="343" height="196"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0Th-Fn-JHl" secondAttribute="height" multiplier="7:4" id="zvU-OO-5U5"/>
+                                </constraints>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0Th-Fn-JHl" secondAttribute="trailing" constant="16" id="d6q-cX-PtZ"/>
+                            <constraint firstItem="0Th-Fn-JHl" firstAttribute="top" secondItem="Ky3-5t-ZWi" secondAttribute="bottom" constant="8" id="jQw-v6-pgR"/>
+                            <constraint firstItem="0Th-Fn-JHl" firstAttribute="leading" secondItem="SPv-kE-Ng2" secondAttribute="leading" constant="16" id="pdv-ts-rnU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="0Th-Fn-JHl" id="sHk-dB-DPb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="flr-py-P33" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1541.5999999999999" y="35.532233883058474"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wds-oQ-q4h">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kcr-1X-wbf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Jdq-jn-95L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qD7-JZ-OWw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rw5-dP-WWE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+</document>
